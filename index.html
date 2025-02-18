@@ -21,6 +21,25 @@
 
 <body>
     <header>
+        <div class="logo2">
+            <a href="index.html"><img src="index_billeder/tastytable_logo.png" alt="logo"></a>
+        </div>
+        <nav>
+            <div class="menu">
+                <a href="index.html">Main</a>
+                <div class="logo">
+                    <a href="index.html"><img src="index_billeder/tastytable_logo.png" alt="logo"></a>
+                </div>
+                <a href="produktliste.html">Recipes</a>
+
+            </div>
+
+            <div class="burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </nav>
     </header>
     <main>
         <div class="grid">
@@ -80,7 +99,50 @@
             <button class="nav-button right" onclick="moveSlide(1)">&#10095;</button>
         </div>
     </main>
-    <footer></footer>
+    <footer class="footer">
+        <div class="grid_1_1_1_1">
+            <a href="index.html"><img class="logofoot" src="index_billeder/tastytable_logo.png" alt="logo"></a>
+            <div>
+                <div>
+                    <p>+ 45 46 46 00 00</p>
+                    <p>Food@tastytable.dk</p>
+                </div>
+                <div>
+                    <p>Guldbergsgade 29,</p>
+                    <p>2200 Nørrebro</p>
+                </div>
+            </div>
+            <div class="ikoner">
+                <img class="ikon" src="index_billeder/facebook.svg" alt="Facebook">
+                <img class="ikon" src="index_billeder/instagram.svg" alt="Instagram">
+            </div>
+
+            <div>
+                <p>Sign up for our newsletter and discover 100 more recipes.</p>
+                <form class="email-form" action="#" method="post">
+                    <input type="email" name="email" placeholder="Email" required>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+
+        </div>
+    </footer>
+    <script>
+        const burger = document.querySelector(".burger");
+        const nav = document.querySelector("nav");
+        const menu = document.querySelector(".menu");
+
+        burger.addEventListener("click", burgerClick);
+        function burgerClick() {
+            burger.classList.toggle("active");
+            nav.classList.toggle("active");
+        }
+        menu.addEventListener("click", menuClick);
+        function menuClick() {
+            burger.classList.remove("active");
+            nav.classList.remove("active");
+        }
+    </script>
 </body>
 
 </html>
