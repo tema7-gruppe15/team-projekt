@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+/********************** HERO *********************/
+h1 {
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+.slide_overskrift {
+  margin-top: 5rem;
+  margin-bottom: 1rem;
+}
+h3 {
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+
+.grid_billeder {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.Tekstboks_forside {
+  background-color: #d9d9d9;
+  margin-bottom: 3rem;
+  padding-inline: 2rem;
+}
+
+@media (min-width: 600px) {
+  h1 {
+    text-align: center;
+    margin-bottom: 0.5rem;
+  }
+  h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  .slide_overskrift {
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+    margin-left: 4rem;
+  }
+  h3 {
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+  }
+  .hero_billede {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  .Tekstboks_forside {
+    background-color: #d9d9d9;
+    margin-bottom: 5rem;
+    margin-top: 3rem;
+    padding-inline: 14rem;
+    padding-top: 0.5rem;
+    padding-bottom: 4rem;
+  }
+  .tekstboks_overskrift {
+    font-family: "Josefin Sans", serif;
+    font-weight: 600;
+  }
+  .grid {
+    display: grid;
+    place-items: center;
+    position: relative;
+    height: 73.5vh;
+    text-align: center;
+    color: navy;
+    background-color: #eff0eb;
+    overflow: hidden;
+    margin-top: 2.5rem;
+  }
+
+  .grid h1 {
+    grid-area: 1 / 1;
+    font-weight: bold;
+    z-index: 1;
+    color: #0d0d2b;
+    text-transform: uppercase;
+    font-size: 14rem;
+  }
+
+  .grid img {
+    grid-area: 1 / 1;
+    position: relative;
+    z-index: 2;
+    width: 300px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    top: -490px;
+    right: -693.5px;
+  }
+
+  .grid img:nth-child(2) {
+    top: -562px;
+    left: -398px;
+  }
+}
+
+/********************* SLIDESHOW *******************/
+.slideshow-container {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+.slideshow_forside {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.slideshow_forside div {
+  min-width: 25%;
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
+
+.slideshow_forside img {
+  width: 250px;
+  height: auto;
+}
+
+.slideshow_forside h3 {
+  margin-top: 10px;
+  color: #333;
+}
+
+.nav-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 20px;
+  cursor: pointer;
+  border-radius: 50%;
+  font-size: 2em;
+  z-index: 1;
+}
+
+.nav-button.left {
+  left: 20px;
+}
+
+.nav-button.right {
+  right: 20px;
+}
+
+.nav-button:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
