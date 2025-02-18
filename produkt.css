@@ -1,0 +1,91 @@
+/* Reset styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+  text-align: center;
+}
+
+.container {
+  max-width: 900px;
+  margin: 30px auto;
+  background: white;
+  padding: 20px;
+}
+
+/* Overskrift styling */
+h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+/* Grid layout */
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* To lige store kolonner */
+  grid-column: span 2;
+  gap: 20px;
+  align-items: start;
+}
+
+/* Billedet til venstre */
+.image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Tekstboksene til højre */
+.text-boxes {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* To lige store kolonner */
+  gap: 20px;
+}
+
+/* Første boks spænder over to kolonner */
+.description {
+  grid-column: span 2;
+  background: white;
+  padding: 15px;
+  border: 1px solid black;
+  text-align: left;
+}
+
+/* Anden boks spænder over to kolonner */
+.recipe-text {
+  background: white;
+  padding: 15px;
+  border: 1px solid black;
+  text-align: left;
+}
+
+/* Info-boksen placeres nederst til højre */
+.info-box {
+  justify-self: end;
+  max-width: 200px;
+  background: white;
+  padding: 15px;
+  border: 1px solid black;
+  text-align: left;
+}
+
+/* Responsivt design */
+@media (max-width: 768px) {
+  .content {
+    grid-template-columns: 1fr; /* Skift til én kolonne på mobil */
+  }
+
+  .text-boxes {
+    grid-template-columns: 1fr;
+  }
+
+  .info-box {
+    max-width: 100%;
+    justify-self: start;
+  }
+}
