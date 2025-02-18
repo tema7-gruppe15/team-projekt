@@ -43,7 +43,7 @@ const id = new URLSearchParams(window.location.search).get("id");
 
 // Corrected variable reference
 
-fetch(`https://dummyjson.com/recipes/1`)
+fetch(`https://dummyjson.com/recipes/${id}`)
   .then((response) => response.json()) // Corrected 'Response' to 'response'
   .then((data) => showProduct(data))
   .catch((error) => console.error("Error fetching data:", error)); // Added error handling
