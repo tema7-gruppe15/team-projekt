@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+main {
+  background-color: #eff0eb;
+}
+h1 {
+  font-family: "Inter", serif;
+  font-size: 4rem;
+  text-align: center;
+}
+h2 {
+  font-family: "Josefin Sans", serif;
+  font-size: 1rem;
+  font-weight: 800;
+  text-align: center;
+}
+h3 {
+  font-family: "Josefin Sans", serif;
+  font-weight: 600;
+}
+
+@media (min-width: 600px) {
+  h1 {
+    font-family: "Inter", serif;
+    font-size: 6rem;
+  }
+  h2 {
+    font-family: "Josefin Sans", serif;
+    font-size: 1.5rem;
+    font-weight: 800;
+  }
+  h3 {
+    font-family: "Josefin Sans", serif;
+    font-weight: 600;
+  }
+}
