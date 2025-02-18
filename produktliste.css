@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.product_list_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 13px;
+  position: relative;
+  width: 100%;
+}
+
+.card {
+  display: grid;
+  grid-template-rows: subgrid;
+  grid-row: span 8;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  padding: 0.6rem;
+}
+.recipesoverskridt {
+  text-align: center;
+  margin-top: 3rem;
+  font-size: 5rem;
+}
+.dropdown {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  margin-top: 2rem;
+  font-size: 1.3rem;
+  margin-bottom: 3rem;
+  margin-left: 6rem;
+  margin-right: 6rem;
+  flex-wrap: wrap;
+}
+.dropdownitem {
+  border: 1px solid black; /* Sort kant */
+  padding: 5px 10px; /* Lidt afstand inde i boksen */
+  display: inline-block; /* Holder boksen kun omkring teksten */
+  white-space: nowrap;
+  background-color: rgb(255, 255, 255);
+}
+.tags {
+  display: flex;
+  gap: 20px;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+.tagshver {
+  border: 1px solid black; /* Sort kant */
+  padding: 5px 10px; /* Lidt afstand inde i boksen */
+  display: inline-block; /* Holder boksen kun omkring teksten */
+}
+.card h2 {
+  font-size: 3rem;
+}
+.skriftrecipe {
+  font-size: 1.5rem;
+}
+.rating {
+  display: flex;
+  gap: 20px;
+  font-size: 2.5rem;
+}
+@media (max-width: 800px) {
+  .product_list_container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .card {
+    display: grid;
+    margin: 30px;
+  }
+}
