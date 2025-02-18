@@ -80,7 +80,7 @@ h3 {
     position: relative;
     height: 73.5vh;
     text-align: center;
-    color: navy;
+    color: #0f3837;
     background-color: #eff0eb;
     overflow: hidden;
     margin-top: 2.5rem;
@@ -92,7 +92,7 @@ h3 {
     z-index: 1;
     color: #0d0d2b;
     text-transform: uppercase;
-    font-size: 14rem;
+    font-size: 16vw;
   }
 
   .grid img {

@@ -228,15 +228,25 @@ a {
   width: 131.5px;
 }
 .grid_1_1_1_1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   gap: 10px;
   background-color: #eff0eb;
+  text-align: center;
+}
+.ikon {
+  width: 25%;
 }
 @media (min-width: 600px) {
   .grid_1_1_1_1 {
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
     align-items: center;
     background-color: #eff0eb;
+    text-align: left;
   }
   .logofoot {
     width: 131.5px;
