@@ -89,3 +89,59 @@ h1 {
     justify-self: start;
   }
 }
+
+/* Popup vindue */
+.popup-container {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+.popup {
+  background: #ff440f;
+  padding: 55px;
+  border-radius: 8px;
+  text-align: center;
+  position: relative;
+  width: 485px;
+  z-index: 1001;
+}
+.popup h2 {
+  color: white;
+}
+.popup p {
+  color: white;
+}
+.popup .close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 20px;
+  cursor: pointer;
+  color: white;
+}
+.popup form {
+  display: flex;
+  margin-top: 20px;
+}
+.popup input[type="email"] {
+  flex: 2;
+  padding: 10px;
+  border: none;
+  font-size: 16px;
+  background: #d9d9d9;
+}
+.popup button {
+  flex: 1;
+  border: none;
+  background: #b3b1b1;
+  color: black;
+  font-size: 16px;
+  cursor: pointer;
+}
