@@ -15,20 +15,22 @@ img {
   gap: 13px;
   position: relative;
   width: 100%;
+  margin-bottom: 3rem;
 }
 
 .card {
   display: grid;
   grid-template-rows: subgrid;
-  grid-row: span 8;
-  margin-left: 2rem;
-  margin-right: 2rem;
+  grid-row: span 10;
+  margin-left: 1rem;
+  margin-right: 1rem;
   padding: 0.6rem;
+  margin-top: 4rem;
 }
 .recipesoverskridt {
   text-align: center;
   margin-top: 3rem;
-  font-size: 5rem;
+  font-size: 3rem;
 }
 .dropdown {
   display: flex;
@@ -41,10 +43,11 @@ img {
   margin-right: 6rem;
   flex-wrap: wrap;
 }
+
 .dropdownitem {
-  border: 1px solid black; /* Sort kant */
-  padding: 5px 10px; /* Lidt afstand inde i boksen */
-  display: inline-block; /* Holder boksen kun omkring teksten */
+  border: 1px solid black;
+  padding: 5px 10px;
+  display: inline-block;
   white-space: nowrap;
   background-color: rgb(255, 255, 255);
 }
@@ -55,9 +58,9 @@ img {
   margin-bottom: 0.5rem;
 }
 .tagshver {
-  border: 1px solid black; /* Sort kant */
-  padding: 5px 10px; /* Lidt afstand inde i boksen */
-  display: inline-block; /* Holder boksen kun omkring teksten */
+  border: 1px solid black;
+  padding: 5px 10px;
+  display: inline-block;
 }
 .card h2 {
   font-size: 3rem;
@@ -68,9 +71,15 @@ img {
 .rating {
   display: flex;
   gap: 20px;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
 }
-@media (max-width: 800px) {
+.card .h2produktliste {
+  font-size: 2rem;
+}
+.pproduktliste {
+  font-size: 1.12rem;
+}
+/* @media (max-width: 800px) {
   .product_list_container {
     display: grid;
     grid-template-columns: 1fr;
@@ -79,4 +88,64 @@ img {
     display: grid;
     margin: 30px;
   }
+} */
+
+.read {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 1.5rem;
+  text-decoration: underline;
+  color: rgb(57, 57, 125);
+}
+
+/* .dropdown {
+  position: relative;
+}
+
+.dropdown-btn {
+  padding: 10px 20px;
+  font-size: 1.3rem;
+  border: 1px solid black;
+  background-color: white;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+}
+
+.mealtype-dropdown {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  top: 100%;
+}
+
+.mealtype-dropdown .dropdownitem {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.mealtype-dropdown .dropdownitem:hover {
+  background-color: #ddd;
+}
+
+.dropdown.active .mealtype-dropdown {
+  display: block;
+} */
+select {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Gør dropdownen lidt større */
+select:focus {
+  border-color: #3498db;
+  outline: none;
 }

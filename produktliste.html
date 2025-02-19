@@ -8,40 +8,148 @@
     <link rel="stylesheet" href="produktliste.css">
     <link rel="stylesheet" href="global.css">
     <script src="produktliste.js" defer></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
 
 </head>
 
 <body>
-    <header></header>
+    <header>
+        <div class="logo2">
+            <a href="index.html"><img src="index_billeder/tastytable_logo.png" alt="logo"></a>
+        </div>
+        <nav>
+            <div class="menu">
+                <a href="index.html">Main</a>
+                <div class="logo">
+                    <a href="index.html"><img src="index_billeder/tastytable_logo.png" alt="logo"></a>
+                </div>
+                <a href="produktliste.html">Recipes</a>
+
+            </div>
+
+            <div class="burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </nav>
+    </header>
     <main>
+
         <h1 class="recipesoverskridt">Recipes</h1>
         <div class="dropdown">
-            <a href="produktliste.html">All</a>
-            <a href="produktliste.html?category=Breakfast">Breakfast</a>
-            <a href="produktliste.html?category=Lunch">Lunch</a>
-            <a href="produktliste.html?category=Dinner">Dinner</a>
-            <a href="produktliste.html?category=Dessert">Dessert</a>
-            <a href="produktliste.html?category=Side Dish">Side Dish</a>
-            <a href="produktliste.html?category=Snack">Snacks</a>
-            <a href="produktliste.html?category=Appetizer">Appetizer</a>
-            <a href="produktliste.html?category=Beverage">Beverage</a>
-
-            <!-- <p class="dropdownitem">Breakfast</p>
-            <p class="dropdownitem">Lunch</p>
-            <p class="dropdownitem">Dinner</p>
-            <p class="dropdownitem">Dessert</p>
-            <p class="dropdownitem">Side Dish</p>
-            <p class="dropdownitem">Snacks</p>
-            <p class="dropdownitem">Appetizer</p>
-            <p class="dropdownitem">Beverage</p> -->
-
+            <select id="cuisine">
+                <option value="All">Cuisine</option>
+            </select>
+            <select id="mealType">
+                <option value="All">Mealtype</option>
+            </select>
+            <!-- <select id="difficulty">
+                <option value="All">Difficulty</option>
+            </select> -->
         </div>
+        <h2>Blandet</h2>
+
+
+        <!-- <h1 class="recipesoverskridt">Recipes</h1>
+        <div class="dropdown">
+            <a class="dropdownitem" href="produktliste.html">All</a>
+            <a class="dropdownitem" href="produktliste.html?category=Breakfast">Breakfast</a>
+            <a class="dropdownitem" href="produktliste.html?category=Lunch">Lunch</a>
+            <a class="dropdownitem" href="produktliste.html?category=Dinner">Dinner</a>
+            <a class="dropdownitem" href="produktliste.html?category=Dessert">Dessert</a>
+            <a class="dropdownitem" href="produktliste.html?category=Side%20Dish">Side Dish</a>
+            <a class="dropdownitem" href="produktliste.html?category=Snack">Snacks</a>
+            <a class="dropdownitem" href="produktliste.html?category=Appetizer">Appetizer</a>
+            <a class="dropdownitem" href="produktliste.html?category=Beverage">Beverage</a>
+
+        </div> -->
+
+        <!-- <div class="dropdown">
+            <button class="dropdown-btn">Meal Type</button>
+            <div class="mealtype-dropdown">
+                <a class="dropdownitem" href="produktliste.html">All</a>
+                <a class="dropdownitem" href="produktliste.html?category=Breakfast">Breakfast</a>
+                <a class="dropdownitem" href="produktliste.html?category=Lunch">Lunch</a>
+                <a class="dropdownitem" href="produktliste.html?category=Dinner">Dinner</a>
+                <a class="dropdownitem" href="produktliste.html?category=Dessert">Dessert</a>
+                <a class="dropdownitem" href="produktliste.html?category=Side%20Dish">Side Dish</a>
+                <a class="dropdownitem" href="produktliste.html?category=Snack">Snacks</a>
+                <a class="dropdownitem" href="produktliste.html?category=Appetizer">Appetizer</a>
+                <a class="dropdownitem" href="produktliste.html?category=Beverage">Beverage</a>
+            </div>
+        </div> -->
+
+        <!-- <select id="mealType">
+            <option value="All">All</option>
+            <option value="Breakfast">Breakfast</option>
+            <option value="Lunch">Lunch</option>
+            <option value="Dinner">Dinner</option>
+            <option value="Dessert">Dessert</option>
+            <option value="Side Dish">Side Dish</option>
+            <option value="Snack">Snacks</option>
+            <option value="Appetizer">Appetizer</option>
+            <option value="Beverage">Beverage</option>
+        </select> -->
+
+
 
         <div class="product_list_container">
+        </div>
+
+    </main>
+    <footer class="footer">
+        <div class="grid_1_1_1_1">
+            <a href="index.html"><img class="logofoot" src="index_billeder/tastytable_logo.png" alt="logo"></a>
+            <div>
+                <div>
+                    <p>+ 45 46 46 00 00</p>
+                    <p>Food@tastytable.dk</p>
+                </div>
+                <div>
+                    <p>Guldbergsgade 29,</p>
+                    <p>2200 Nørrebro</p>
+                </div>
+            </div>
+            <div class="ikoner">
+                <img class="ikon" src="index_billeder/facebook.svg" alt="Facebook">
+                <img class="ikon" src="index_billeder/instagram.svg" alt="Instagram">
+            </div>
+
+            <div>
+                <p>Sign up for our newsletter and discover 100 more recipes.</p>
+                <form class="email-form" action="#" method="post">
+                    <input type="email" name="email" placeholder="Email" required>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
 
         </div>
-    </main>
-    <footer></footer>
+    </footer>
+    <script>
+        const burger = document.querySelector(".burger");
+        const nav = document.querySelector("nav");
+        const menu = document.querySelector(".menu");
+
+        burger.addEventListener("click", burgerClick);
+        function burgerClick() {
+            burger.classList.toggle("active");
+            nav.classList.toggle("active");
+        }
+        menu.addEventListener("click", menuClick);
+        function menuClick() {
+            burger.classList.remove("active");
+            nav.classList.remove("active");
+        }
+    </script>
 
 </body>
 
