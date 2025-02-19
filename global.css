@@ -32,6 +32,9 @@ h3 {
   font-family: "Josefin Sans", serif;
   font-weight: 600;
 }
+p {
+  font-family: "Merriweather", serif;
+}
 
 @media (min-width: 600px) {
   h1 {

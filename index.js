@@ -9,7 +9,7 @@ function showDinnerRecipes(dinnerRecipes) {
     .map(
       (recipe) => `
     <div class="slide">
-      <a href="produkt.html">
+      <a href="produkt.html?id=${recipe.id}">
         <img src="${recipe.image}" alt="${recipe.name}">
       </a>
       <h3>${recipe.name}</h3>
