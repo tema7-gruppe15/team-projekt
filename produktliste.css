@@ -21,7 +21,7 @@ img {
 .card {
   display: grid;
   grid-template-rows: subgrid;
-  grid-row: span 10;
+  grid-row: span 8;
   margin-left: 1rem;
   margin-right: 1rem;
   padding: 0.6rem;
@@ -75,6 +75,7 @@ img {
 }
 .card .h2produktliste {
   font-size: 2rem;
+  text-align: left;
 }
 .pproduktliste {
   font-size: 1.12rem;
