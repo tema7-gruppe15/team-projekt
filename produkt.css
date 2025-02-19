@@ -14,7 +14,7 @@ body {
 .container {
   max-width: 900px;
   margin: 30px auto;
-  background: white;
+  background: #eff0eb;
   padding: 20px;
 }
 
@@ -50,7 +50,7 @@ h1 {
 /* Første boks spænder over to kolonner */
 .description {
   grid-column: span 2;
-  background: white;
+  background: #d9d9d9;
   padding: 15px;
   border: 1px solid black;
   text-align: left;
@@ -58,17 +58,18 @@ h1 {
 
 /* Anden boks spænder over to kolonner */
 .recipe-text {
-  background: white;
+  background: #d9d9d9;
   padding: 15px;
   border: 1px solid black;
   text-align: left;
+  padding-left: 15%;
 }
 
 /* Info-boksen placeres nederst til højre */
 .info-box {
   justify-self: end;
   max-width: 200px;
-  background: white;
+  background: #d9d9d9;
   padding: 15px;
   border: 1px solid black;
   text-align: left;
