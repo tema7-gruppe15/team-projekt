@@ -78,4 +78,11 @@ function showProduct(data) {
   `;
 }
 
+window.onload = function () {
+  document.getElementById("popup").style.display = "flex";
+};
+function closePopup() {
+  document.getElementById("popup").style.display = "none";
+}
+
 //  <p><strong>Ingredients:<br></strong> ${data.ingredients.join("<br>")}</p> //
