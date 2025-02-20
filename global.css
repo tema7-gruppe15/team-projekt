@@ -270,3 +270,11 @@ a {
     width: 50%;
   }
 }
+.menu a.active {
+  border-bottom: 3px solid black;
+  color: #000000;
+}
+.menu a img {
+  border: none;
+  outline: none;
+}
