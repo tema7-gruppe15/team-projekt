@@ -26,6 +26,7 @@ img {
   margin-right: 1rem;
   padding: 0.6rem;
   margin-top: 4rem;
+  max-width: 550px;
 }
 .recipesoverskridt {
   text-align: center;
@@ -84,7 +85,7 @@ img {
 .read {
   text-align: center;
   margin-top: 10px;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   text-decoration: underline;
   color: rgb(57, 57, 125);
 }
