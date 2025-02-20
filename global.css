@@ -67,9 +67,11 @@ header {
 @media (min-width: 800px) {
   .logo img {
     width: 100px;
-    height: 110px;
-    top: -27.5px;
+    height: 116.5px;
+    top: -45.5px;
     position: relative;
+    aspect-ratio: 549.87/682.58;
+    scale: 1.5;
   }
   .logo2 {
     display: none;
@@ -155,6 +157,8 @@ a {
     top: -22px;
     left: 30px;
     position: absolute;
+    aspect-ratio: 549.87/682.58;
+    scale: 1.3;
   }
   .burger.active .line:nth-child(1) {
     transform: rotate(45deg) translate(5px, 5px);
